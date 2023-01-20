@@ -162,6 +162,7 @@ while(y--)
 }
 
 
+//or
 int main()
  {
       
