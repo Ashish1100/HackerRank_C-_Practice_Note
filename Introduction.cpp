@@ -34,11 +34,11 @@ int main()
 #include<iostream>
 using namespace std;
 
-void update(int *a,int *b) 
+void update(int *x,int *y) 
 {
 
- (*a)=abs(*a + *b);
- (*b)=abs(*a - *b - *b);
+ (*x)=abs(*x + *y);
+ (*x)=abs(*x - *y - *y);
  
    
 }
@@ -58,14 +58,14 @@ int main() {
 
 #include <stdio.h>
 
-void update(int *a,int *b) {
+void update(int *x,int *y) {
     int temp = *a;   
-    *a = *a + *b;
-    *b = temp - *b;
+    *x = *x + *y;
+    *y = temp - *y;
     
-    if (*b < 0)
+    if (*y < 0)
     {
-        *b = -(*b);
+        *y = -(*y);
     }
 }
 
